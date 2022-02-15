@@ -1,0 +1,51 @@
+.pageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  align-content: center;
+  perspective: 1000px;
+}
+
+.cardContainer {
+  height: 90%;
+  width: 85%;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.pageContainer .cardContainer.flipped .front {
+  transform: rotateY(180deg);
+}
+.pageContainer .cardContainer.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.pageContainer .cardContainer .front,
+.pageContainer .cardContainer .back {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: #121212;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: -webkit-transform ease 500ms;
+  transition: transform ease 500ms;
+}
+
+.pageContainer .cardContainer .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.pageContainer .cardContainer .back {
+  background: #121212;
+  transform: rotateY(-180deg);
+  font-size: 20px;
+}

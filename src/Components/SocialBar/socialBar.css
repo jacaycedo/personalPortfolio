@@ -1,0 +1,88 @@
+.social {
+  width: 40px;
+  position: fixed;
+  top: calc(50% - 61px);
+  bottom: auto;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: whitesmoke;
+  height: 102px;
+}
+.social ul {
+  list-style-type: none;
+}
+.social a {
+  margin: 0px auto;
+  color: whitesmoke;
+}
+.social a:hover {
+  color: #be6adf;
+  position: relative;
+  top: -2px;
+}
+.social li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social ul::before {
+  background-color: #be6adf;
+  content: "";
+  width: 2px;
+  height: 30px;
+  margin: 5px auto;
+}
+.social ul::after {
+  background-color: #be6adf;
+  content: "";
+  width: 2px;
+  height: 30px;
+  margin: 5px auto;
+}
+
+.socialFooter{
+  justify-content: center;
+  display: none;
+}
+.socialFooter a
+{
+  color: whitesmoke;
+}
+.socialFooter ul {
+  list-style-type: none;
+  width: 200px;
+  margin-left: calc(50% - 100px);
+}
+.socialFooter li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+}
+.socialFooter ul::before {
+  background-color: #be6adf;
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin: auto 5px;
+}
+.socialFooter ul::after {
+  background-color: #be6adf;
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin: auto 5px;
+}
+@media (max-width: 767px) {
+    .social
+    {
+      display: none;
+    }
+    .socialFooter
+    {
+      display: block;
+    }
+}
