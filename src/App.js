@@ -27,7 +27,9 @@ function App() {
         <div className="App" id={loading ? "noScroller" : "scroll"}>
           <NavBar setLanguage={setLanguage} />
           <Switch>
-            <Route path="/" exact component={HomePage} />
+            <Route path="/" exact >
+              <HomePage lang ={language} />
+            </Route>
             <Route component={genericNotFound} />
           </Switch>
           <Footer />

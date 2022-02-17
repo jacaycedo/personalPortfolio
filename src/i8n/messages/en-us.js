@@ -32,6 +32,7 @@ export default {
     errorMsg: "Page Not Found",
     errorBtn: "Go Home",
     projects: "SOME THINGS I'VE  ",
-    built:"BUILT"
+    built:"BUILT",
+    projectsInWork: "This zone is still being developed"
   },
 };

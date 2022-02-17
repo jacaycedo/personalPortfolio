@@ -32,6 +32,7 @@ export default {
     errorMsg: "Página no encontrada",
     errorBtn: "Ir al inicio",
     projects: "ALGUNAS COSAS QUE HE ",
-    built:"DESARROLLADO"
+    built:"DESARROLLADO",
+    projectsInWork: "Esta zona esta en desarrollo."
   },
 };

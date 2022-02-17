@@ -376,11 +376,20 @@ canvas {
 .homeProjects{
   position: relative;
   min-height: 60vh;
-  border: solid 1px #7e4794;
+  /*border: solid 1px #7e4794; */
   padding-top: 60px !important;
   padding-bottom: 60px !important;
   padding-right: 60px !important;
   padding-left: 60px !important;
+}
+.projectsContent {
+  color: whitesmoke !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  text-align: center;
+}
+.bodyProjects{
+  font-size: 1.3em;
 }
 /* CONTACT */
 .contactMain {
@@ -428,3 +437,4 @@ canvas {
   color: whitesmoke;
   background-color: #be6adf50;
 }
+

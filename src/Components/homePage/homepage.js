@@ -9,7 +9,7 @@ import Contact from "../Contact/contact";
 import { FormattedMessage } from "react-intl";
 import Projects from "../Projects/projects";
 
-function HomePage() {
+function HomePage({lang}) {
   return (
     <section>
       <Container fluid className="main">
@@ -54,12 +54,18 @@ function HomePage() {
                   <Typewriter
                     options={{
                       fontFamily: "consolas",
-                      strings: [
+                      strings: lang =="en-us"? [
                         "full stack developer",
                         "student",
                         "gamer",
                         "technology enthusiast",
                         "developer",
+                      ]: [
+                        "desarrollador full stack",
+                        "estudiante",
+                        "gamer",
+                        "entusiasta de la tecnologia",
+                        "desarrollador"
                       ],
                       autoStart: true,
                       loop: true,
@@ -75,7 +81,7 @@ function HomePage() {
         </Container>
       </Container>
       <HomePage2 />
-      <Projects/>
+      <Projects />
       <Contact />
     </section>
   );

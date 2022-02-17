@@ -84,6 +84,9 @@ function NavBar({ setLanguage }) {
                 as={Link}
                 to="/#projects"
                 onClick={() => expandir(false)}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "auto", block: "center" })
+                }
               >
                 · <FormattedMessage id="navbarProjects"></FormattedMessage> ·
               </Nav.Link>
