@@ -54,7 +54,7 @@ function HomePage({lang}) {
                   <Typewriter
                     options={{
                       fontFamily: "consolas",
-                      strings: lang =="en-us"? [
+                      strings: lang === "en-us"? [
                         "full stack developer",
                         "student",
                         "gamer",
