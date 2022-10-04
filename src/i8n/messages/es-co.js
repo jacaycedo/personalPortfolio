@@ -49,7 +49,22 @@ export default {
     DecemberDosUno:"Diciembre 2021",
     MayDosDos: "Mayo 2022",
     JulyDosDos: "Julio 2022",
-    Present:"Presente"
+    Present:"Presente",
+    2019:"2019",
+    2022:"2022",
+    sistrans:"Monitor de Sistemas Transaccionales",
+    lym:"Monitor de Lenguajes y Máquinas",
+    apo:"Monitor de Algorítmica y Programación orientada a objetos",
+    hei1:"Implementación de protocolos DevOps para mantener la integridad de las bases de datos e información",
+    hei2:"Desarrollo y mantenimiento de código bash para mantener los archivos sin formato actualizados en las instancias de la base de datos",
+    hei3:"Desarrollo de scripts para crear maquinas virtuales, aprovisionarlas y adecuarlas para uso como backup de base de datos",
+    hei4:"Adecuar codigo en java para generar sentencias SQL válidas para la cargar la base de datos",
+    wdr1:"Desarrollar y mantener el Backend para la web y juego de unity",
+    wdr2:"Desarrollar sitio web de WONDER XR",
+    wdr3:"Integración de Juego con el Backend",
+    ddo1:"Desarrollo Fullstack",
+    ddo2:"Cofundador"
+
 
 
   },

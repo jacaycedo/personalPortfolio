@@ -15,7 +15,7 @@ function Projects() {
           </span>
         </h2>
         <Row>
-          <Tab.Container defaultActiveKey="first">
+          <Tab.Container defaultActiveKey="daddo">
             <Row className="projectsContent">
               <Col sm={12} md={4}>
                 <Nav
@@ -44,7 +44,7 @@ function Projects() {
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col sm={12} md={8}>
+              <Col sm={12} md={8} className="columnaTrabajoDetalle">
                 <Tab.Content>
                   <Tab.Pane eventKey="daddo">
                     <WorkSection
@@ -52,6 +52,7 @@ function Projects() {
                       jobPlace={"daddo"}
                       start={"JulyDosDos"}
                       finish={"Present"}
+                      bullets={["ddo1", "ddo2"]}
                     />
                   </Tab.Pane>
                   <Tab.Pane eventKey="wonder">
@@ -60,6 +61,7 @@ function Projects() {
                       jobPlace={"wonder"}
                       start={"MayDosDos"}
                       finish={"JulyDosDos"}
+                      bullets={["wdr1", "wdr2", "wdr3"]}
                     />
                   </Tab.Pane>
                   <Tab.Pane eventKey="heinsohn">
@@ -68,6 +70,7 @@ function Projects() {
                       jobPlace={"heinsohn"}
                       start={"JulyDosUno"}
                       finish={"DecemberDosUno"}
+                      bullets={["hei1", "hei2", "hei3", "hei4"]}
                     />
                   </Tab.Pane>
                   <Tab.Pane eventKey="uniandes">
@@ -76,6 +79,7 @@ function Projects() {
                       jobPlace={"uniandes"}
                       start={"2019"}
                       finish={"2022"}
+                      bullets={["sistrans", "lym", "apo"]}
                     />
                   </Tab.Pane>
                 </Tab.Content>

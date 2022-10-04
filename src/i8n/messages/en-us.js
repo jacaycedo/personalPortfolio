@@ -49,7 +49,21 @@ export default {
     DecemberDosUno:"December 2021",
     MayDosDos: "May 2022",
     JulyDosDos: "July 2022",
-    present:"Present"
+    Present:"Present",
+    2019:"2019",
+    2022:"2022",
+    sistrans:"Teaching assistant of Transactional Systems",
+    lym:"Teaching assistant of Languages and Machines",
+    apo:"Teaching assistant of Object oriented Algorithmic and programing",
+    hei1:"Implemented DevOps integration with databases, to maintain intergity of information.",
+    hei2:"Develop and maintain bash code in order to upload any changes to unformatted documents to all databases instances",
+    hei3:"Develop bash scripts in order to create virtual machines, supply them and make them available as database backup ",
+    hei4:"Adecuate Java project in order to generate valid SQL statments to maintain database integrity ",
+    wdr1:"Develop and maintain backend for web and unity game",
+    wdr2:"Develop WONDER XR website",
+    wdr3:"Game and Back-End Integration",
+    ddo1:"Fullstack Developer",
+    ddo2:"Cofounder"
 
   },
 };

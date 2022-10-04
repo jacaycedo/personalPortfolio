@@ -438,6 +438,24 @@ canvas {
   /*border: solid 1px #7e4794; */
   padding: 1rem 25rem 9rem !important;
 }
+.workListBullets
+{
+  list-style: none;
+  color: #C4C4C4;
+}
+.workListBullets li::before {
+  content: "\2022";
+  color: #be6adf;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+@media(max-width:767px) {
+  .columnaTrabajoDetalle{
+    padding-top: 2vh;
+  }
+}
 @media (max-width: 1366px) {
   .homeProjects {
     padding: 0rem 8rem !important;

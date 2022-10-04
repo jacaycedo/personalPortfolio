@@ -10,7 +10,20 @@ export const WorkSection = (props) => {
           <FormattedMessage id={props.jobPlace} />
         </span>
       </h5>
-      <p style={{color:"#C4C4C4"}}> <FormattedMessage id={props.start} /> -  <FormattedMessage id={props.finish}/> </p>
+      <p style={{ color: "#C4C4C4" }}>
+        {" "}
+        <FormattedMessage id={props.start} /> -{" "}
+        <FormattedMessage id={props.finish} />{" "}
+      </p>
+      <ul className="workListBullets">
+        {props.bullets.map((content, i) => {
+          return (
+            <li key={i}>
+              <FormattedMessage id={content} />{" "}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
