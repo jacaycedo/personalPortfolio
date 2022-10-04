@@ -8,8 +8,10 @@ import Scroll from "../ScrollSign/Scroll";
 import Contact from "../Contact/contact";
 import { FormattedMessage } from "react-intl";
 import Projects from "../Projects/projects";
+import Fade from "react-reveal/Fade";
+import DogCat from "../DogAndCat/dogcat";
 
-function HomePage({lang}) {
+function HomePage({ lang }) {
   return (
     <section>
       <Container fluid className="main">
@@ -43,7 +45,12 @@ function HomePage({lang}) {
                   fontFamily: "Inconsolata",
                 }}
               >
-                <h3> {'<div class = "'}<FormattedMessage id="mainDescription" ></FormattedMessage>{'" > '} </h3>
+                <h3>
+                  {" "}
+                  {'<div class = "'}
+                  <FormattedMessage id="mainDescription"></FormattedMessage>
+                  {'" > '}{" "}
+                </h3>
                 <h2
                   style={{
                     paddingLeft: 40,
@@ -54,19 +61,22 @@ function HomePage({lang}) {
                   <Typewriter
                     options={{
                       fontFamily: "consolas",
-                      strings: lang === "en-us"? [
-                        "full stack developer",
-                        "student",
-                        "gamer",
-                        "technology enthusiast",
-                        "developer",
-                      ]: [
-                        "desarrollador full stack",
-                        "estudiante",
-                        "gamer",
-                        "entusiasta de la tecnologia",
-                        "desarrollador"
-                      ],
+                      strings:
+                        lang === "en-us"
+                          ? [
+                              "full stack developer",
+                              "student",
+                              "gamer",
+                              "technology enthusiast",
+                              "developer",
+                            ]
+                          : [
+                              "desarrollador full stack",
+                              "estudiante",
+                              "gamer",
+                              "entusiasta de la tecnologia",
+                              "desarrollador",
+                            ],
                       autoStart: true,
                       loop: true,
                     }}
@@ -80,9 +90,18 @@ function HomePage({lang}) {
           <Scroll></Scroll>
         </Container>
       </Container>
-      <HomePage2 />
-      <Projects />
-      <Contact />
+      <Fade>
+        <HomePage2 />
+      </Fade>
+      <Fade>
+        <Projects />
+      </Fade>
+      <Fade>
+        <Contact />
+      </Fade>
+      <Fade>
+        <DogCat/>
+      </Fade>
     </section>
   );
 }

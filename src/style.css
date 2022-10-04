@@ -9,6 +9,7 @@ h2 {
 }
 .purple {
   color: #be6adf;
+  width: fit-content;
 }
 /*NAVBAR */
 .navbar {
@@ -224,6 +225,64 @@ h1 .name {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
+/* DOG CAT */
+.dogCat {
+  position: relative;
+  min-height: 60vh;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 2rem 20rem 9rem !important;
+  text-align: center;
+  color: whitesmoke;
+  vertical-align: middle;
+}
+@media (max-width: 1366px) {
+  .dogCat {
+    padding: 0rem 8rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .dogCat {
+    padding: 0rem 0rem !important;
+  }
+}
+.dogCatButton{
+  background-color: #121212;
+  border: 2px solid #be6adf;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  margin: 15px;
+}
+.dogCatButton:hover {
+  color: whitesmoke;
+  background-color: #be6adf50;
+  border: none;
+}
+.dogCatButton:focus {
+  background-color: #121212;
+  border: 2px solid #be6adf;
+  box-shadow: none;
+}
+.dogCatButton:focus-visible {
+  background-color: #121212;
+  border: 2px solid #be6adf;
+  box-shadow: none;
+}
+#dogCatSelected
+{
+  background-color: #be6adf50;
+  border: none;
+  box-shadow: none;
+}
+.catDogAnimationContainer{
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* FOOTER */
 .footer {
@@ -375,22 +434,85 @@ canvas {
 /* PROJECTS */
 .homeProjects{
   position: relative;
-  min-height: 60vh;
+  min-height: 70vh;
   /*border: solid 1px #7e4794; */
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
-  padding-right: 60px !important;
-  padding-left: 60px !important;
+  padding: 1rem 25rem 9rem !important;
+}
+@media (max-width: 1366px) {
+  .homeProjects {
+    padding: 0rem 8rem !important;
+  }
+}
+@media(max-width:767px)
+{
+  .projectListRow{
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto !important;
+    padding-bottom: 5px;
+  }
+  .navItemProjectsList{
+    display: inline-block;
+  }
+  .nav-link.active.projectsList{
+    display: inline-block;
+    background-color: #332F2E!important ;
+    border-bottom: solid 4px #7e4794 !important;
+    border-left: none !important;
+    color: #be6adf;
+  }
+  .nav-link.projectsList{
+    display: inline-block;
+    background-color: #121212 ;
+    color : whitesmoke;
+    border-bottom: solid 3px #464646;
+    border-left: none !important;
+    border-radius: 0% !important;
+    margin: 0%;
+  }
+}
+
+@media (max-width: 700px) {
+  .homeProjects {
+    padding: 0rem 0rem !important;
+  }
 }
 .projectsContent {
   color: whitesmoke !important;
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   text-align: center;
+  width: 100%;
 }
 .bodyProjects{
   font-size: 1.3em;
 }
+.nav-link.active.projectsList{
+  background-color: #332F2E!important ;
+  border-left: solid 4px #7e4794;
+  color: #be6adf;
+}
+.nav-link.projectsList{
+  background-color: #121212 ;
+  color : whitesmoke;
+  border-left: solid 3px #464646;
+  border-radius: 0% !important;
+  margin: 0%;
+}
+.nav-link.projectsList:hover{
+  background-color: #332F2E ;
+  color : #be6adf;
+  border-left: solid 3px #464646;
+  border-radius: 0% !important;
+  margin: 0%;
+}
+
+.jobInfoContainer{
+  width:100%;
+  text-align: justify;
+}
+
+
 /* CONTACT */
 .contactMain {
   position: relative;

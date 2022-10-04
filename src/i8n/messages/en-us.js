@@ -5,7 +5,7 @@ export default {
   [LOCALES.ENGLISH]: {
     navbarHome: "Home",
     navbarAbout: "About",
-    navbarProjects: "Projects",
+    navbarProjects: "Projects & Work",
     navbarContact: "Contact",
     mainHi: "Hi!",
     mainIm: "I'm ",
@@ -31,8 +31,25 @@ export default {
     sayHelloInTouch:"Say Hello :D",
     errorMsg: "Page Not Found",
     errorBtn: "Go Home",
-    projects: "SOME THINGS I'VE  ",
-    built:"BUILT",
-    projectsInWork: "This zone is still being developed"
+    projects: "WHERE I'VE  ",
+    built:"WORKED",
+    oneLast: "ONE LAST ",
+    thing: "QUESTION",
+    projectsInWork: "This zone is still being developed",
+
+    uniandes: " Los Andes University",
+    teachingAsistant: "Teaching Assistant at",
+    intern:"Software Development intern at ",
+    heinsohn:"Heinsohn",
+    fullstack:"Full Stack Developer at ",
+    wonder:"WONDER! XR",
+    founderDev: "Cofounder and Full Stack Developer at ",
+    daddo:"DADDO Software",
+    JulyDosUno:"July 2021",
+    DecemberDosUno:"December 2021",
+    MayDosDos: "May 2022",
+    JulyDosDos: "July 2022",
+    present:"Present"
+
   },
 };

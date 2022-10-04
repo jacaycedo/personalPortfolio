@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
+  const [showCat, setShowCat] = useState(false);
+  const [showDog, setShowDog] = useState(false);
   return (
     <Container className="footer">
       <Row className="rowFooter">
