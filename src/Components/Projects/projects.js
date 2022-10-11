@@ -2,9 +2,24 @@ import React from "react";
 import { Container, Row, Col, Tab, Nav, Tabs } from "react-bootstrap";
 import { FormattedMessage } from "react-intl";
 import Letra from "../homePage/letraNombre";
+import { WorkCard } from "./workCards";
 import { WorkSection } from "./workSection";
 
 function Projects() {
+  const workPlaces = ["daddo", "wonder", "heinsohn", "uniandes"];
+  const startFinish = [
+    ["2019", "2022"],
+    ["JulyDosUno", "DecemberDosUno"],
+    ["MayDosDos", "JulyDosDos"],
+    ["MayDosDos", "Present"],
+  ];
+  const jobTitles = ["teachingAsistant", "intern", "fullstack", "founderDev"];
+  const jobBullets = [
+    ["sistrans", "lym", "apo"],
+    ["hei1", "hei2", "hei3", "hei4"],
+    ["wdr1", "wdr2", "wdr3"],
+    ["ddo1", "ddo2"]
+  ];
   return (
     <Container fluid className="homeProjects" id="projects">
       <Container>
@@ -15,6 +30,20 @@ function Projects() {
           </span>
         </h2>
         <Row>
+          <div className="workCards">
+            {workPlaces.map((name, i) => {
+              return (
+                <WorkCard
+                  name={name}
+                  start={startFinish[i][0]}
+                  finish={startFinish[i][1]}
+                  jobTitle={jobTitles[i]}
+                  bullets={jobBullets[i]}
+                />
+              );
+            })}
+          </div>
+          {/*
           <Tab.Container defaultActiveKey="daddo">
             <Row className="projectsContent">
               <Col sm={12} md={4}>
@@ -86,6 +115,7 @@ function Projects() {
               </Col>
             </Row>
           </Tab.Container>
+        */}
         </Row>
       </Container>
     </Container>
