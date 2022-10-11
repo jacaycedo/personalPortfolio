@@ -18,7 +18,7 @@ function Projects() {
     ["sistrans", "lym", "apo"],
     ["hei1", "hei2", "hei3", "hei4"],
     ["wdr1", "wdr2", "wdr3"],
-    ["ddo1", "ddo2"]
+    ["ddo1", "ddo2"],
   ];
   return (
     <Container fluid className="homeProjects" id="projects">
@@ -43,7 +43,7 @@ function Projects() {
               );
             })}
           </div>
-          {/*
+
           <Tab.Container defaultActiveKey="daddo">
             <Row className="projectsContent">
               <Col sm={12} md={4}>
@@ -115,7 +115,6 @@ function Projects() {
               </Col>
             </Row>
           </Tab.Container>
-        */}
         </Row>
       </Container>
     </Container>

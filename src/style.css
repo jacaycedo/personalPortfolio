@@ -447,6 +447,11 @@ canvas {
   gap: 5px;
   padding: 1vw;
 }
+@media screen and (max-width:767px){
+  .workCards{
+    display: none;
+  }
+}
 .workCards .WorkContainer{
   height: 100%;
   flex: 1;
@@ -532,6 +537,11 @@ canvas {
 @media (max-width: 700px) {
   .homeProjects {
     padding: 0rem 0rem !important;
+  }
+}
+@media (min-width:768px){
+  .projectsContent{
+    display: none;
   }
 }
 .projectsContent {
