@@ -6,7 +6,8 @@ import { WorkCard } from "./workCards";
 import { WorkSection } from "./workSection";
 
 function Projects() {
-  const workPlaces = ["daddo", "wonder", "heinsohn", "uniandes"];
+  /*
+   const workPlaces = ["daddo", "wonder", "heinsohn", "uniandes"];
   const startFinish = [
     ["2019", "2022"],
     ["JulyDosUno", "DecemberDosUno"],
@@ -19,6 +20,19 @@ function Projects() {
     ["hei1", "hei2", "hei3", "hei4"],
     ["wdr1", "wdr2", "wdr3"],
     ["ddo1", "ddo2"],
+  ];
+  */
+  const workPlaces = ["uniandes", "heinsohn", "wonder"];
+  const startFinish = [
+    ["2019", "2022"],
+    ["JulyDosUno", "DecemberDosUno"],
+    ["MayDosDos", "JulyDosDos"],
+  ];
+  const jobTitles = ["teachingAsistant", "intern", "fullstack",];
+  const jobBullets = [
+    ["sistrans", "lym", "apo"],
+    ["hei1", "hei2", "hei3", "hei4"],
+    ["wdr1", "wdr2", "wdr3"],
   ];
   return (
     <Container fluid className="homeProjects" id="projects">
